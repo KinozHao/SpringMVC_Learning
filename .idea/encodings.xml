@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/A_Demo1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A_Demo1/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A_Demo1/src/main/resources/springMVC.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/resources/springMVC.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java/com/Index.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java/com/user/StuList.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java/com/user/TeacherList.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/resources/Bean.xml" charset="GBK" />
   </component>
 </project>

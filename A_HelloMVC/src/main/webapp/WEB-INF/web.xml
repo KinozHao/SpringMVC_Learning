@@ -5,13 +5,14 @@
 						http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         id="WebApp_ID" version="4.0">
 
-        <!--配置SpringMVC前端控制器-->
+    <!--配置SpringMVC前端控制器 用于对浏览器发送的请求统一处理-->
     <servlet>
         <servlet-name>SpringMVC</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!--配置SpringMVC配置文件的位置和名称-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
+            <!--classpath代表从类路径查找配置文件-->
             <param-value>classpath:springMVC.xml</param-value>
         </init-param>
         <!--将前端控制器的初始化时间提前到服务器启动时-->
@@ -19,6 +20,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SpringMVC</servlet-name>
+        <!-- / 代表当前浏览器发送的所用请求,但不包括jsp-->
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>

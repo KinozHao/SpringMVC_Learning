@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="A_Demo1" />
+        <module name="B_RequestMapping" />
+        <module name="A_HelloMVC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

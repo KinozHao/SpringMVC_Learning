@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/A_Demo1" />
     <file type="web" url="file://$PROJECT_DIR$/A_Demo2" />
+    <file type="web" url="file://$PROJECT_DIR$/A_HelloMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/B_RequestMapping" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

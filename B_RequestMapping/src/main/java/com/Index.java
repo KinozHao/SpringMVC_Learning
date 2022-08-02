@@ -20,18 +20,18 @@ public class Index {
     }
 
 
-    //²âÊÔvalue Êı×éĞÎÊ½·ÃÎÊ¶à¸öÂ·¾¶
+    //æµ‹è¯•value æ•°ç»„å½¢å¼è®¿é—®å¤šä¸ªè·¯å¾„
     @RequestMapping(value = {"/test1","/test2"})
     public String index1(){
         return "valueTest";
     }
 
-    //²âÊÔmethod Ö¸¶¨ÇëÇó·½Ê½
+    //æµ‹è¯•method æŒ‡å®šè¯·æ±‚æ–¹å¼
     @RequestMapping(value = "/methods",method = {RequestMethod.GET})
     public String index2(){
         return "valueTest";
     }
-    //RequestMappingµÄÅÉÉú×¢½â
+    //RequestMappingçš„æ´¾ç”Ÿæ³¨è§£
     @GetMapping("/rm")
     public String index3(){
         return "valueTest";
@@ -40,7 +40,7 @@ public class Index {
     public String index4(){
         return "valueTest";
     }
-    //²âÊÔparams Ğ¯´ø²ÎÊı
+    //æµ‹è¯•params æºå¸¦å‚æ•°
     @RequestMapping(value = "/paramsTest",params = {"username","password!=123456"})
     public String index5(){
         return "valueTest";

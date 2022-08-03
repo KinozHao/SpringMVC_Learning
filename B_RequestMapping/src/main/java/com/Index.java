@@ -19,7 +19,6 @@ public class Index {
         return "index";
     }
 
-
     //测试value 数组形式访问多个路径
     @RequestMapping(value = {"/test1","/test2"})
     public String index1(){
@@ -43,6 +42,13 @@ public class Index {
     //测试params 携带参数
     @RequestMapping(value = "/paramsTest",params = {"username","password!=123456"})
     public String index5(){
+        return "valueTest";
+    }
+
+    //测试headers属性
+    //因为tomcat地址为8080,所以一定会报404错误
+    @RequestMapping(value = "headersTest",headers = {"Host=localhost:8081"})
+    public String index6(){
         return "valueTest";
     }
 }

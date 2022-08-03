@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    <a th:href="@{/student/stu_list}">学生信息页面</a><br>
+    <a th:href="@{/teacher/tea_list}">教师信息页面</a><br>
+
+    <!--RequestMapping属性测试-->
+    <a th:href="@{/test1}">测试value属性->test1路径</a><br>
+    <a th:href="@{/test2}">测试value属性->test2路径</a><br>
+    <a th:href="@{/rm}">GetMapping注解测试</a><br>
+    <a th:href="@{/pm}">PostMapping注解测试</a><br>
+    <a th:href="@{/paramsTest(username='root',password=123456)}">测试params属性</a><br>
+    <a th:href="@{/headersTest}">测试headers属性</a><br><br>
+
+    <!--Ant风格-->
+    <a th:href="@{/aaa/AntI}">?代表任意字符</a><br>
+    <a th:href="@{/aaa/AntII}">*代表任意0个或多个字符</a><br>
+    <a th:href="@{/aaa/AntIII}">**代表任意一层或多层目录 单独使用</a><br>
+
+    <!--PlaceHolder-->
+    <a th:href="@{/PhTest/10086/Tom}">占位符使用</a>
+</h1>
+</body>
+</html>

@@ -22,33 +22,35 @@ public class Index {
     //测试value 数组形式访问多个路径
     @RequestMapping(value = {"/test1","/test2"})
     public String index1(){
-        return "valueTest";
+        return "success";
     }
 
     //测试method 指定请求方式
     @RequestMapping(value = "/methods",method = {RequestMethod.GET})
     public String index2(){
-        return "valueTest";
+        return "success";
     }
-    //RequestMapping的派生注解
+
+    //RequestMapping的派生注解(了解)
     @GetMapping("/rm")
     public String index3(){
-        return "valueTest";
+        return "success";
     }
     @PostMapping("/pm")
     public String index4(){
-        return "valueTest";
+        return "success";
     }
+
     //测试params 携带参数
     @RequestMapping(value = "/paramsTest",params = {"username","password!=123456"})
     public String index5(){
-        return "valueTest";
+        return "success";
     }
 
     //测试headers属性
     //因为tomcat地址为8080,所以一定会报404错误
     @RequestMapping(value = "headersTest",headers = {"Host=localhost:8081"})
     public String index6(){
-        return "valueTest";
+        return "success";
     }
 }

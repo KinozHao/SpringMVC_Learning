@@ -15,16 +15,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AntClasses {
     @RequestMapping("/a?a/AntI")
     public String Ant1(){
-        return "valueTest";
+        return "success";
     }
 
     @RequestMapping("/a*a/AntII")
     public String Ant2(){
-        return "valueTest";
+        return "success";
     }
 
     @RequestMapping("/**/AntIII")
     public String Ant3(){
-        return "valueTest";
+        return "success";
     }
 }

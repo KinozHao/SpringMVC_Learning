@@ -14,6 +14,6 @@ public class PlaceHolder {
     @RequestMapping("/PhTest/{id}/{name}")
     public String PhTest(@PathVariable("id")String id,@PathVariable("name")String name){
         System.out.println("id:"+id+" name:"+name);
-        return "valueTest";
+        return "success";
     }
 }

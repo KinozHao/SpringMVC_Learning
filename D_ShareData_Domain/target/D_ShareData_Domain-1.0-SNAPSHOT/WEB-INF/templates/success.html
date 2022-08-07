@@ -8,9 +8,12 @@
 <h1>
     Test jump success
     <a th:href="@{/return}">返回主页</a>
-    <!--获取共享数据 报错不影响运行-->
+    <!--获取request域共享数据 报错不影响运行-->
     <p th:text="${testRequestScope}"></p>
+    <!--获取session域共享数据-->
+    <p th:text="${session.testSessionScope}"></p>
+    <!--获取application域共享数据-->
+    <p th:text="${application.testApplicationScope}"></p>
 </h1>
-
 </body>
 </html>

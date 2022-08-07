@@ -48,6 +48,4 @@ public class MavUs {
         map.put("testRequestScope","共享数据:Map");
         return "success";
     }
-
-
 }

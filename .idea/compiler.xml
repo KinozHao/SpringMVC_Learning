@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="D_ShareData_Domain" />
-        <module name="C_Obtain" />
         <module name="B_RequestMapping" />
+        <module name="C_Obtain" />
         <module name="A_HelloMVC" />
+        <module name="D_ShareData_Domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="A_Demo2" target="11" />
+      <module name="E_WithJSP" target="11" />
+      <module name="SomeOthers" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

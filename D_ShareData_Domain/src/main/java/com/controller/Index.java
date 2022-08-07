@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Index {
 
-    @RequestMapping("/")
+    //使用Bean文件种的视图控制器替代
+   /* @RequestMapping("/")
     public String index(){
         return "index";
     }
@@ -19,5 +20,5 @@ public class Index {
     @RequestMapping("/return")
     public String index1(){
         return "index";
-    }
+    }*/
 }

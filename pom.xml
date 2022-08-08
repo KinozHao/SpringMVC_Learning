@@ -13,6 +13,7 @@
         <module>B_RequestMapping</module>
         <module>C_Obtain</module>
         <module>D_ShareData_Domain</module>
+        <module>E_RESTFul</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="E_RESTFul:war exploded">
-    <output-path>$PROJECT_DIR$/E_RESTFul/target</output-path>
+    <output-path>$PROJECT_DIR$/E_RESTFul/target/E_RESTFul-1.0-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>

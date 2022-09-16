@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>
+        此页面测试RequestMapping注解中属性的使用
+    </h1><br>
+    <!--java文件中只写了get方式 405错误:请求方式不支持-->
+    <form th:action="@{/methods}" method="post">
+        <input type="submit" name="提交">
+    </form>
+</body>
+</html>

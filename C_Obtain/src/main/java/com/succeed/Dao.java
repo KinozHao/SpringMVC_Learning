@@ -21,7 +21,7 @@ public class Dao {
     private JdbcTemplate jdbcTemplate;
 
     public List<Book> findAll() {
-        String sql = "select * from book_info;";
+        String sql = "select * from book_info";
         final List<Book> query = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Book.class));
         return query;
     }

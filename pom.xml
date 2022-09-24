@@ -14,6 +14,7 @@
         <module>C_Obtain</module>
         <module>D_ShareData_Domain</module>
         <module>E_RESTFul</module>
+        <module>F_RestProject</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

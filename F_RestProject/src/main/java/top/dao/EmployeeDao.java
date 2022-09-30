@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import top.entity.Employee;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +15,9 @@ import java.util.Map;
  * @author kinoz
  * @Date 2022/9/24 14:53
  * @apiNote 模拟用户数据
+ * 把数据换成了数据库,但是无法实现更新数据功能,
+ * 报错:org.springframework.dao.DuplicateKeyException: PreparedStatementCallback
+ * 注释代码为模拟数据语句使用Map集合实现
  */
 @Repository
 public class EmployeeDao {
@@ -56,12 +58,11 @@ public class EmployeeDao {
      * 获取所有员工
      * @return
      */
-    @Test
     public Collection<Employee> getAll() {
         String sql = "select * from restful";
         List<Employee> employeeList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Employee.class));
-        //return employees.values();
         return employeeList;
+        //return employees.values();
     }
 
     /**
@@ -75,6 +76,7 @@ public class EmployeeDao {
         return employee;
         //return employees.get(id);
     }
+
 
     /**
      * 根据id删除员工

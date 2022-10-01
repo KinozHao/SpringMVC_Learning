@@ -1,6 +1,5 @@
 package top.dao;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,7 +14,7 @@ import java.util.Map;
  * @author kinoz
  * @Date 2022/9/24 14:53
  * @apiNote 模拟用户数据
- * 把数据换成了数据库,但是无法实现更新数据功能,
+ * 把模拟数据换成了数据库,但是无法实现更新数据功能,
  * 报错:org.springframework.dao.DuplicateKeyException: PreparedStatementCallback
  * 注释代码为模拟数据语句使用Map集合实现
  */
@@ -48,7 +47,7 @@ public class EmployeeDao {
             employee.setId(initId++);
         }
         //employees.put(employee.getId(), employee);
-        String sql = "insert into restful values(?,?,?,?)";
+        String sql = "insert into employee_info_restful values(?,?,?,?)";
         int update = jdbcTemplate.update(sql, employee.getId(), employee.getLastName(), employee.getEmail(), employee.getGender());
         System.out.println("添加成功:影响行数:"+update);
 
@@ -59,8 +58,9 @@ public class EmployeeDao {
      * @return
      */
     public Collection<Employee> getAll() {
-        String sql = "select * from restful";
+        String sql = "select * from employee_info_restful";
         List<Employee> employeeList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Employee.class));
+        System.out.println("获取所有员工信息成功:"+sql);
         return employeeList;
         //return employees.values();
     }
@@ -71,8 +71,9 @@ public class EmployeeDao {
      * @return
      */
     public Employee get(Integer id) {
-        String sql = "select * from restful where id = ?";
+        String sql = "select * from employee_info_restful where id = ?";
         Employee employee = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Employee.class), id);
+        System.out.println("获取指定id员工信息成功:"+sql);
         return employee;
         //return employees.get(id);
     }
@@ -83,8 +84,9 @@ public class EmployeeDao {
      * @param id
      */
     public void delete(Integer id) {
-        String sql = "delete from restful where id=?";
+        String sql = "delete from employee_info_restful where id=?";
         jdbcTemplate.update(sql,id);
+        System.out.println("删除指定id员工信息成功:"+sql);
         //employees.remove(id);
     }
 }

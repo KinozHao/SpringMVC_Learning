@@ -13,7 +13,7 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <!--classpath代表从类路径查找配置文件-->
-            <param-value>classpath:springMVC.xml</param-value>
+            <param-value>classpath:bean.xml</param-value>
         </init-param>
         <!--将前端控制器的初始化时间提前到服务器启动时-->
         <load-on-startup>1</load-on-startup>

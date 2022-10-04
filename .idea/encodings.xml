@@ -3,7 +3,7 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/resources/springMVC.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A_HelloMVC/src/main/resources/bean.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java/top/Index.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/B_RequestMapping/src/main/java/top/user/StuList.java" charset="UTF-8" />
@@ -18,6 +18,8 @@
     <file url="file://$PROJECT_DIR$/E_RESTFul/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/F_RestProject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/F_RestProject/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/G_Converter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/G_Converter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

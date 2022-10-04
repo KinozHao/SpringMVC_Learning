@@ -50,7 +50,6 @@ public class EmployeeDao {
         String sql = "insert into employee_info_restful values(?,?,?,?)";
         int update = jdbcTemplate.update(sql, employee.getId(), employee.getLastName(), employee.getEmail(), employee.getGender());
         System.out.println("添加成功:影响行数:"+update);
-
     }
 
     /**

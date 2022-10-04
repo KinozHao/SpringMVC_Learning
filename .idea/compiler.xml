@@ -2,16 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="E_RESTFul" />
-        <module name="C_Obtain" />
+        <module name="G_Converter" />
         <module name="A_HelloMVC" />
-        <module name="B_RequestMapping" />
         <module name="D_ShareData_Domain" />
         <module name="F_RestProject" />
+        <module name="E_RESTFul" />
+        <module name="C_Obtain" />
+        <module name="B_RequestMapping" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

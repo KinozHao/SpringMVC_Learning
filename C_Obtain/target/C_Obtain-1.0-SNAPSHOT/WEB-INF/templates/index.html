@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    <a th:href="@{/testServletAPI(username='Tom',password=123456)}">使用servlet api获取参数</a><br>
+    <a th:href="@{/testParams(username='菲力',password=123456)}">使用控制器方法形参获取参数</a><br>
+    <a th:href="@{/testRps(user_name='Cherry',secret=123)}">@RequestParams|Header|Cookie测试</a><br>
+    <a th:href="@{/testPOJO}">跳转实体类测试页面</a>
+</h1>
+<form th:action="@{/testParams}" method="get">
+        控制器形参获取测试<br>
+        用户名:<input type="text" name="username"><br>
+        密  码:<input type="password" name="password"><br>
+        爱  好:<input type="checkbox" name="hobby" value="唱跳">唱跳
+        <input type="checkbox" name="hobby" value="rap">rap
+        <input type="checkbox" name="hobby" value="篮球">篮球<br>
+        <input type="submit" value="提交参数"/>
+</form>
+
+
+</body>
+</html>

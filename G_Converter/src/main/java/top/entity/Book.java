@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.junit.Test;
 
 /**
  * @author kinoz
@@ -21,5 +20,4 @@ public class Book {
     private int id;
     private String bookName;
     private String bookPrice;
-
 }

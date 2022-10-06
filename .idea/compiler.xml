@@ -12,6 +12,7 @@
         <module name="D_ShareData_Domain" />
         <module name="F_RestProject" />
         <module name="E_RESTFul" />
+        <module name="H_Interceptors" />
         <module name="C_Obtain" />
         <module name="B_RequestMapping" />
       </profile>

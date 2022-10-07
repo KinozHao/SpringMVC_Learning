@@ -27,6 +27,7 @@
         </property>
     </bean>
     <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/return" view-name="index"/>
     <!--访问静态资源-->
     <mvc:default-servlet-handler/>
     <!--开启注解驱动-->
@@ -36,14 +37,30 @@
         <!--方式1:-->
         <!--<bean class="com.interceptors.FirstInterceptors"/>-->
         <!--方式2:-->
-        <!--<ref bean="firstInterceptors"/>-->
+        <ref bean="firstInterceptors"/>
+        <ref bean="secondInterceptors"/>
         <!--以上两种方式都是对DispatcherServlet所处理的所有请求进行拦截-->
+
         <!--方式3:指定请求拦截-->
-        <mvc:interceptor>
-            <!--<mvc:mapping path="/*"/>-->            <!--仅对项目后路径有效-->
-            <mvc:mapping path="/**"/>            <!--对所有请求拦截-->
-            <mvc:exclude-mapping path="/"/>     <!--排除拦截的页面-->
+        <!--<mvc:interceptor>
+            &lt;!&ndash;<mvc:mapping path="/*"/>&ndash;&gt;            &lt;!&ndash;仅对项目后路径有效&ndash;&gt;
+            <mvc:mapping path="/**"/>            &lt;!&ndash;对所有请求拦截&ndash;&gt;
+            <mvc:exclude-mapping path="/"/>     &lt;!&ndash;排除拦截的页面&ndash;&gt;
             <ref bean="firstInterceptors"/>
-        </mvc:interceptor>
+        </mvc:interceptor>-->
     </mvc:interceptors>
+    <!--文件上传解析器,将上传的文件封装为MultipartFile,id为如下固定id-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+
+    <!--配置异常处理-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!--跳转到指定视图-->
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.ArithmeticException">error</prop>
+            </props>
+        </property>
+        <!--捕获错误信息,存放在请求域中-->
+        <property name="exceptionAttribute" value="ex"/>
+    </bean>
 </beans>

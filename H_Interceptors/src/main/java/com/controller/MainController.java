@@ -16,4 +16,11 @@ public class MainController {
     public String tis(){
         return "success";
     }
+
+    @RequestMapping("/testExceptionHandler")
+    public String teh(){
+        //手动制造错误,触发bean中配置的异常
+        System.out.println(1/0);
+        return "success";
+    }
 }

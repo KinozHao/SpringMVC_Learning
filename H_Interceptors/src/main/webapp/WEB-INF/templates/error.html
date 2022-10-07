@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>error page</title>
+</head>
+<body>
+ <h1><center>error!!!</center></h1><Br>
+ <h1><center>error!!!</center></h1>
+
+ <!--获取请求域中存放的异常信息-->
+ <h1>
+     <center>
+         Exception information:
+         <p th:text="${ex}"></p>
+    </center>
+ </h1>
+</body>
+</html>

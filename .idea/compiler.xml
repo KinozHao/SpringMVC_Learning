@@ -15,6 +15,7 @@
         <module name="H_Interceptors" />
         <module name="C_Obtain" />
         <module name="B_RequestMapping" />
+        <module name="I_AllAnotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -12,6 +12,7 @@
     <file type="web" url="file://$PROJECT_DIR$/F_RestProject" />
     <file type="web" url="file://$PROJECT_DIR$/G_Converter" />
     <file type="web" url="file://$PROJECT_DIR$/H_Interceptors" />
+    <file type="web" url="file://$PROJECT_DIR$/I_AllAnotation" />
     <file type="web" url="file://$PROJECT_DIR$/SomeOthers" />
   </component>
   <component name="MavenProjectsManager">

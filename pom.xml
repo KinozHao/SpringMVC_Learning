@@ -17,6 +17,7 @@
         <module>F_RestProject</module>
         <module>G_Converter</module>
         <module>H_Interceptors</module>
+        <module>I_AllAnotation</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

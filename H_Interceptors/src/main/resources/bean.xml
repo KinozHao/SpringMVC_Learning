@@ -53,14 +53,16 @@
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 
     <!--配置异常处理-->
-    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
-        <!--跳转到指定视图-->
+    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        &lt;!&ndash;跳转到指定视图&ndash;&gt;
         <property name="exceptionMappings">
             <props>
+                &lt;!&ndash;properties的键表示处理器方法执行过程中出现的异常&ndash;&gt;
+                &lt;!&ndash;其中的值表示要跳转到的视图页面&ndash;&gt;
                 <prop key="java.lang.ArithmeticException">error</prop>
             </props>
         </property>
-        <!--捕获错误信息,存放在请求域中-->
+        &lt;!&ndash;捕获错误信息,存放在请求域中的键&ndash;&gt;
         <property name="exceptionAttribute" value="ex"/>
-    </bean>
+    </bean>-->
 </beans>

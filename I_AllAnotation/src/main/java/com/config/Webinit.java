@@ -13,22 +13,26 @@ import javax.servlet.Filter;
  */
 public class Webinit extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
-    protected Class<?>[] getRootConfigClasses() {   //指定spring配置类
+    //指定spring配置类
+    protected Class<?>[] getRootConfigClasses() {
         return new Class[]{SpringConfig.class};
     }
 
     @Override
-    protected Class<?>[] getServletConfigClasses() {    //指定springMVC配置类
+    //指定springMVC配置类
+    protected Class<?>[] getServletConfigClasses() {
         return new Class[]{WebConfig.class};
     }
 
     @Override
-    protected String[] getServletMappings() {   //指定DispatchServlet映射规则,即url-pattern
+    //指定DispatchServlet映射规则,即url-pattern
+    protected String[] getServletMappings() {
         return new String[]{"/"};
     }
 
     @Override
-    protected Filter[] getServletFilters() {    //注册过滤器
+    //注册过滤器
+    protected Filter[] getServletFilters() {
        CharacterEncodingFilter codeFilter = new CharacterEncodingFilter();
        codeFilter.setEncoding("UTF-8");
        codeFilter.setForceResponseEncoding(true);

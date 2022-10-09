@@ -1,6 +1,7 @@
 package com.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.code.Interceptor.FirstInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +20,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.List;
 import java.util.Properties;
@@ -40,15 +42,15 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     //拦截器
-    /*@Resource
-    FirstInterceptor firstInterceptor;
+    @Resource
+    private FirstInterceptor firstInterceptor;
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //添加拦截路径
         registry.addInterceptor(firstInterceptor).addPathPatterns("/**");
         //排除拦截路径
         registry.addInterceptor(firstInterceptor).excludePathPatterns("/fuck");
-    }*/
+    }
 
     //视图控制器,当只需要实现页面跳转功能时使用
     @Override

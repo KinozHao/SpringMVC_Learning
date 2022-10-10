@@ -13,10 +13,10 @@ import javax.sql.DataSource;
 /**
  * @author kinoz
  * @Date 2022/10/8 20:28
- * @apiNote
+ * @apiNote 整合spring的基础配置
  */
 @Configuration
-@ComponentScan(value = "com.code")
+@ComponentScan(value = "com.code")  //避免包含配置类路径,否则会有一定概率报错
 @EnableTransactionManagement
 public class SpringConfig {
 

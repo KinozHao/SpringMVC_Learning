@@ -82,6 +82,7 @@ public class WebConfig implements WebMvcConfigurer {
     public ITemplateResolver templateResolver() {
         WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();
         // ServletContextTemplateResolver需要一个ServletContext作为构造参数，可通过WebApplicationContext 的方法获得
+        assert webApplicationContext != null;
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver(
                 webApplicationContext.getServletContext());
         templateResolver.setPrefix("/WEB-INF/templates/");

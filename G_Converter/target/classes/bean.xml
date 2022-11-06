@@ -35,7 +35,6 @@
     <mvc:default-servlet-handler/>
     <!--注解驱动-->
     <mvc:annotation-driven/>
-    <!--文件上传解析器,将上传的文件封装为MultipartFile-->
-    <!--id必须为如下-->
+    <!--文件上传解析器,将上传的文件封装为MultipartFile,id为如下固定id-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 </beans>
